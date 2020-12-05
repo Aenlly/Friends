@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Friends</string>
+    <string name="title_activity_bottom">bottomActivity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_home_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="hello_dashboard_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="hello_notifications_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="title_home">聊天室</string>
+    <string name="title_dashboard">联系人</string>
+    <string name="title_notifications">消息</string>
+    <string name="title_my">我的</string>
+    <string name="title_my_pwd">修改密码</string>
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
