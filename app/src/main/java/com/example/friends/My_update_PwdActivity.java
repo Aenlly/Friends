@@ -1,16 +1,13 @@
 package com.example.friends;
 
-import android.content.Intent;
+import android.os.Bundle;
 import android.os.Looper;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import androidx.navigation.fragment.NavHostFragment;
-import com.example.friends.DAL.Login;
+import com.example.friends.DAL.LoginDAL;
 import com.example.friends.Enitiy.User;
-import com.example.friends.ui.my.my_checkpwdFragment;
 
 public class My_update_PwdActivity extends AppCompatActivity {
 
@@ -23,15 +20,17 @@ public class My_update_PwdActivity extends AppCompatActivity {
         setTitle("修改密码");
         edit_my_new_pwd = findViewById(R.id.edit_my_new_pwd);
 
-        //取消按钮
-        findViewById(R.id.btn_my_pwd_on).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                My_update_PwdActivity.this.finish();//释放界面内存
-            }
-        });
+        // 取消按钮
+        findViewById(R.id.btn_my_pwd_on)
+                .setOnClickListener(
+                        new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                finish(); // 释放界面内存
+                            }
+                        });
 
-        //确认按钮
+        // 确认按钮
         findViewById(R.id.btn_my_pwd_yes)
                 .setOnClickListener(
                         new View.OnClickListener() {
@@ -54,7 +53,7 @@ public class My_update_PwdActivity extends AppCompatActivity {
                                                     @Override
                                                     public void run() {
                                                         // 实例化用户操作类
-                                                        Login login = new Login();
+                                                        LoginDAL login = new LoginDAL();
                                                         // 获得修改是否成功
                                                         boolean is_yes_no =
                                                                 login.CheckPwd(edit_my_new_pwd.getText().toString());

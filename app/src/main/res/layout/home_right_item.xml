@@ -7,19 +7,17 @@
         android:gravity="right|center_vertical"
         android:padding="10dp">
 
-
     <TextView
             android:id="@+id/tv_right_text"
             android:background="@drawable/aio_user_bg_nor_11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
-            android:gravity="center"
-    />
+            android:gravity="center"/>
 
     <TextView
             android:id="@+id/text_right_account"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
 
 </LinearLayout>

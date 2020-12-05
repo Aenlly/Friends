@@ -14,7 +14,6 @@ public class FriendDAL {
 
     public boolean getFriend(String user_id,String friend_id){
         String sqlcmd="select count(*) from friend where f_user='"+user_id+"' and f_user_friend='"+friend_id+"'";
-    System.out.println(sqlcmd);
         int result= Integer.valueOf(SQLUtil.excuteScalar(sqlcmd,null).toString());
         if (result>0) {
             return true;

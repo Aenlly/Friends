@@ -4,7 +4,7 @@ package com.example.friends.DAL;
 import com.example.friends.DBUtil.SQLUtil;
 import com.example.friends.Enitiy.User;
 
-public class Login {
+public class LoginDAL {
 
     //检测用户登录信息是否合法，合法这返回true
     public boolean checkLogin(String user_id, String user_pwd) {

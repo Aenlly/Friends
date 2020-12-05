@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.friends">
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.friends"
+        >
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -20,14 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".accountActivity">
+        <activity android:name=".AccountActivity">
         </activity>
-        <activity android:name=".riagerctivity">
+        <activity android:name=".Riagerctivity">
         </activity>
         <activity android:name=".ui.dashboard.FriendsActivity">
         </activity>
         <activity
-                android:name=".bottomActivity"
+                android:name=".BottomActivity"
                 android:label="@string/title_activity_bottom">
         </activity>
         <activity

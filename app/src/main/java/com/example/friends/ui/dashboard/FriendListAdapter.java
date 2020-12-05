@@ -7,11 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
+import com.example.friends.AccountActivity;
 import com.example.friends.Enitiy.Friends;
 import com.example.friends.Enitiy.User;
 import com.example.friends.R;
-import com.example.friends.accountActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -107,7 +106,7 @@ public class FriendListAdapter extends BaseAdapter {
         } else {//否则跳转
           Friends.setFriend(data.getMs_userid());//存储账号id
           Friends.setNickname(data.getMs_friendnickname());//存储昵称
-          Intent intent = new Intent(v.getContext(), accountActivity.class);//意图跳转
+          Intent intent = new Intent(v.getContext(), AccountActivity.class);//意图跳转
           v.getContext().startActivity(intent);//跳转
         }
       }
